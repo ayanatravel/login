@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATA Login</title>
+  <script src="https://kit.fontawesome.com/f7f0ffe030.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <!-- ヘッダー -->
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <img class="header-logo" src="images/header-logo.jpeg">
+      </div>
+      <div class="header-right">
+        <ul>
+          <li><a href="#">ログイン</a></li>
+          <li><a href="#">予約確認</a></li>
+          <li><a href="https://ayanatravel.github.io/contact/">お問合せ</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <!-- トップ -->
+  <div class="container">
+    <div class="top-wrapper">
+      <h1>Welcome  To  <br><span>A</span>yana <span>T</span>ravel <span>A</span>gency</h1>
+    </div>
+  </div>
+
+  <!-- ログイン -->
+  <div class="container">
+    <div class="login-wrapper">
+      <h3 class="heading">会員のお客様</h3>
+        <p>ID、Passwordをご入力の上、「ログイン」ボタンをクリックしてください。</p>
+        <form class="login_form"  action="#" method="post">
+          <div class="id">
+            <h4>ID</h4>
+            <input type="id" name="id" value="" placeholder="IDを入力してください" required>
+          </div>
+          <div class="password">
+            <h4>Password</h4>
+            <input type="password" name="pass" value="" placeholder="半角英数字6〜10字以内で入力してください" required>
+          </div>
+          <div class="auto-login">
+              <input type="checkbox" name="autologin" id="autologin">
+              <label for="autologin">次回から自動的にログイン</label>
+          </div>
+          <div class="submit">
+            <input type="submit" value="ログイン">
+          </div>
+        </form>        
+    </div>
+  </div>
+  <!-- 新規 -->
+  <div class="container">
+    <h3 class="heading">新規登録のお客様</h3>
+    <p class="signup-comment">「新規登録はこちら」ボタンをクリックしてご登録に進んでください。</p>
+    <div class="signup-wrapper">
+      <h4>If you sign up for a menbership...</h4>
+      <ul>
+        <li>いち早く<span>お得な情報</span>が受け取れる</li>
+        <li><span>会員限定クーポン</span>をゲットできる</li>
+        <li>ご旅行に使える<span>ポイント</span>が貯まる</li>
+      </ul>
+      <div class="signup-btn">
+        <a href="#"><button type="button">新規会員登録はこちら</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <div class="container">
+    <footer>
+      <div class="footer-list">
+        <ul>
+          <li><a href="#">会社案内</a></li>
+          <li><a href="#">個人情報の取扱</a></li>
+          <li><a href="#">旅行条件書</a></li>
+          <li><a href="#">標識・約款</a></li>
+        </ul>
+        <p class="footer-right">Copyright © ATA Co.,Ltd. All Rights Reserved. </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
