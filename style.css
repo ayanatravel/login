@@ -41,165 +41,186 @@ li{
   padding-right: 20px;
 }
 
-/* メニュー */
-.menu{
-  background-color: rgba(167, 214, 241, 0.521);
-  font-size: 15px;
-  padding: 12px 0;
+/* トップ */
+.top-wrapper{
+  background-image: url(images/login.jpg);
+  background-size: cover;
+  background-color: rgba(219, 216, 216, 0.6);
+  background-blend-mode: lighten;
+  height: 300px;
   margin-top: 70px;
 }
 
-.menu-icon{
-  margin-right:60px;
-}
-
-.btn-menu{
-  padding: 8px 30px;
-  opacity: 0.7;
-  display: inline-block;
-  margin:0 30px;
-  transition: all 0.9s;
-}
-
-.btn-menu:hover {
-  opacity: 1;
-  background-color: white;
-  font-size: 18px;
-  }
-
-.fa{
-  padding-right: 5px;
-}
-
-/* メイン */
-.top-wrapper{
-  background-image: url(https://github.com/ayanatravel/ATA-TOP/blob/main/images/sea.jpeg?raw=true);
-  background-size: cover;
-  padding: 200px 0;
-  font-family:'Times New Roman', Times, serif;
-}
-
 .top-wrapper h1{
+  padding: 100px 0 100px 0;
   font-size: 50px;
-  line-height: 30px;
+  color:rgb(46, 46, 46);
+  font-family: 'Times New Roman', Times, serif;
+} 
+
+.login-wrapper p{
+  font-size: 12px;
+}
+
+.heading{
+    padding: 10px 0px ;
+    background-color: rgba(167, 214, 241, 0.521);
+    height: 28px;
+    margin: 40px 0 20px 0; 
 }
 
 .top-wrapper span{
-  color:maroon;
-  font-size: 65px;
+  color: maroon;
 }
 
-.top-wrapper p{
-  font-size: 18px;
+/* ログイン */
+.login_form{
+  background-color: rgba(128, 128, 128, 0.308);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  margin-top: 40px;
 }
 
-/* お知らせ */
-.heading{
-  padding: 10px 0px ;
-  background-color: rgba(167, 214, 241, 0.521);
-  height: 28px;
-  margin: 25px 0;
+.login_form h4{
+  margin-bottom: 0;
 }
 
-.news dl{
-  display:flex;
-  padding-top: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 20%;
+.id input, .password input{
+  border: solid 2px #aaa;
+  border-radius:5px;
+  padding:15px;
+  width: 400px;
 }
 
-.news dt{
-  width: 25%;
-  padding: 5px;
+.auto-login{
+  margin: 15px 0 50px 0;
 }
 
-.news dd {
-  width: 60%;
-  padding: 5px;
-  margin-inline-start: 0; 
-  text-align: left;
-}
+input[type="checkbox"] { display: none; }
 
-.news dt span{
-  color: white;
-  background-color: maroon;
-  padding: 5px;
-  font-size: 5px;
-  margin-right: 5px;
-  border-radius: 5px;
-}
-
-.news  dt time{
-  color: gray;
-  font-size: 15px;
-}
-
-/* スワイパー */
-.swiper-slide img{
+input[type="checkbox"] + label {
   display: block;
-  margin:  0 auto;
-  margin-top: 30px;
-}
-
-.swiper-button-prev{
-  color:gray;
-}
-
-.swiper-button-next{
-  color:gray;
-}
-
-.swiper-pagination{
   position: relative;
-  margin-top:20px;
+  cursor: pointer;
+  padding: 0 150px;
 }
 
-.swiper-pagination-bullet-active{
-  background:maroon;
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid maroon;
+  position: absolute;
+  opacity: .6;
+  transition: all .12s, border-color .08s;
 }
 
-/* sns */
-.line{
-  color: rgb(16, 216, 16);
-}
-
-.instagram{
-  color:rgb(175, 52, 159);
-}
-
-.twitter{
-  color:rgb(21, 165, 248)
-}
-
-.facebook{
-  color: rgb(71, 82, 240);
-}
-
-.youtube{
-  color: red;
-}
-
-.fab{
-  padding: 0 30px;
-  font-size: 50px;
-}
-
-.btn-sns{
-  opacity: 0.8;
-  display: inline-block;
-  margin:30px 30px;
-}
-
-.btn-sns:hover {
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
   opacity: 1;
-  }
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+}
+
+.submit input{
+  width: 200px;
+  padding:10px;
+  background-color: rgba(128, 0, 0, 0.719);
+  color: white;
+  font-size: 15px;
+  border: solid 2px maroon;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 新規登録 */
+.signup-wrapper{
+  background-color: rgba(128, 128, 128, 0.308);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  margin-top: 40px;
+}
+
+.signup-comment{
+  font-size: 12px;
+}
+
+.signup-wrapper h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+button{
+  width: 200px;
+  padding:10px;
+  background-color: rgba(128, 0, 0, 0.719);
+  color: white;
+  font-size: 15px;
+  border: solid 2px maroon;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-wrapper span{
+  background: linear-gradient(transparent 50%, rgba(128, 0, 0, 0.253) 50%);
+}
+
+.signup-wrapper ul{
+  margin-top: 30px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  list-style-type: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  line-height: 2;
+
+}
+
+.signup-wrapper li{
+  float: none;
+  position: relative;
+  padding-left: 25px;
+}
+
+.signup-wrapperli+.signup-wrapperli {
+  margin-top: 5px;
+}
+
+.signup-wrapper li:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 7px;
+  top: .35em;
+  left: 6px;
+  transform: rotate(50deg);
+  border-right: 2px solid maroon;
+  border-bottom: 2px solid maroon;
+}
+
+.signup-wrapper li:after {
+  content: "";
+  position: absolute;
+  top: .2em;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid maroon;
+}
 
 /* フッター */
 footer{
   width: 100%;
   height: 50px;
   background-color: white;
+  top: 0;
   border-top:  rgba(167, 214, 241, 0.521) solid 1px;
   margin-bottom: 40px;
 }
